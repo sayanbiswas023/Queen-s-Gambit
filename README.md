@@ -10,6 +10,6 @@ SYSTEM ARCHITECTURE:
 <br>
 PROCESS FLOWS:
 (i)Cycle Lending<br>
-    (a)User Authentication:
-    (b)
+    (a)User Registration and Verification: Siamese Network<br>
+    (b)<br>
 (ii)Cycle  Borrowing
