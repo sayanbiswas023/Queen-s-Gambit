@@ -8,8 +8,8 @@ TITLE: CYCLISM
 
 SYSTEM ARCHITECTURE:
 <br>
-PROCESS FLOWS:
+PROCESS FLOWS:<br>
 (i)Cycle Lending<br>
-    (a)User Registration and Verification: Siamese Network<br>
-    (b)<br>
+ <t>  (a)User Registration and Verification: Siamese Network<br>
+ <t>  (b)<br>
 (ii)Cycle  Borrowing
