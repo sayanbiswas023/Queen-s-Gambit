@@ -8,6 +8,8 @@ TITLE: CYCLISM
 
 SYSTEM ARCHITECTURE:
 <br>
-(i)Cycle Lending
-    (a)
+PROCESS FLOWS:
+(i)Cycle Lending<br>
+    (a)User Authentication:
+    (b)
 (ii)Cycle  Borrowing
