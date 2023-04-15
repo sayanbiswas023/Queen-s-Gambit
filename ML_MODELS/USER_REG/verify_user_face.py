@@ -37,7 +37,7 @@ def writeattendance(names):
     names.sort()
     textfile = open(os.path.join(present_path,'ML_MODELS','USER_REG','user_scanned.txt'), "w")
     for element in names:
-        textfile.write(element + "\n")
+        textfile.write(str(datetime.now())+" "+element + "\n")
     textfile.close()
 
 def captureScreen(bbox=(0,0,1920,1280)):
@@ -77,17 +77,17 @@ while curr<=start+10:
 
             print(name)
 
-            # y1, x2, y2, x1 = faceLoc
-            # y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
-            # cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            # cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 255, 0), cv2.FILLED)
-            # cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
+            y1, x2, y2, x1 = faceLoc
+            y1, x2, y2, x1 = y1 * 4, x2 * 4, y2 * 4, x1 * 4
+            cv2.rectangle(img, (x1, y1), (x2, y2), (0, 255, 0), 2)
+            cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 255, 0), cv2.FILLED)
+            cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 1, (255, 255, 255), 2)
 
             user.add(name)
 
-    # cv2.imshow('Webcam', img)
-    # cv2.waitKey(1)
-# cap.release()
+    cv2.imshow('Webcam', img)
+    cv2.waitKey(1)
+cap.release()
 cv2.destroyAllWindows()
 writeattendance(user)
 print(list(user))
